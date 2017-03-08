@@ -1,0 +1,14 @@
+C:\Users\prati\Source\Repos\VSTS_MSID_TO_ORGID_MIGRATION\JsonDeserializer\JsonDeserializer\bin\Debug\JsonDeserializer.dll
+C:\Users\prati\Source\Repos\VSTS_MSID_TO_ORGID_MIGRATION\JsonDeserializer\JsonDeserializer\bin\Debug\JsonDeserializer.pdb
+C:\Users\prati\Source\Repos\VSTS_MSID_TO_ORGID_MIGRATION\JsonDeserializer\JsonDeserializer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\prati\Source\Repos\VSTS_MSID_TO_ORGID_MIGRATION\JsonDeserializer\JsonDeserializer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\prati\Source\Repos\VSTS_MSID_TO_ORGID_MIGRATION\JsonDeserializer\JsonDeserializer\obj\Debug\JsonDeserializer.csprojResolveAssemblyReference.cache
+C:\Users\prati\Source\Repos\VSTS_MSID_TO_ORGID_MIGRATION\JsonDeserializer\JsonDeserializer\obj\Debug\JsonDeserializer.dll
+C:\Users\prati\Source\Repos\VSTS_MSID_TO_ORGID_MIGRATION\JsonDeserializer\JsonDeserializer\obj\Debug\JsonDeserializer.pdb
+C:\Users\pratik.sharma\Desktop\JsonDeserializer\JsonDeserializer\bin\Debug\JsonDeserializer.dll
+C:\Users\pratik.sharma\Desktop\JsonDeserializer\JsonDeserializer\bin\Debug\JsonDeserializer.pdb
+C:\Users\pratik.sharma\Desktop\JsonDeserializer\JsonDeserializer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\pratik.sharma\Desktop\JsonDeserializer\JsonDeserializer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\pratik.sharma\Desktop\JsonDeserializer\JsonDeserializer\obj\Debug\JsonDeserializer.csprojResolveAssemblyReference.cache
+C:\Users\pratik.sharma\Desktop\JsonDeserializer\JsonDeserializer\obj\Debug\JsonDeserializer.dll
+C:\Users\pratik.sharma\Desktop\JsonDeserializer\JsonDeserializer\obj\Debug\JsonDeserializer.pdb

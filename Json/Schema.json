@@ -1,0 +1,195 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "type": "string"
+    },
+    "contentVersion": {
+      "type": "string"
+    },
+    "parameters": {
+      "type": "object",
+      "properties": {}
+    },
+    "variables": {
+      "type": "object",
+      "properties": {}
+    },
+    "resources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "dependsOn": {
+            "type": "string"
+          },
+          "properties": {
+            "type": "object",
+            "properties": {
+              "description": {
+                "type": "string"
+              },
+              "vcenterserver": {
+                "type": "string"
+              },
+              "datacenter": {
+                "type": "string"
+              },
+              "cluster": {
+                "type": "string"
+              },
+              "template": {
+                "type": "string"
+              },
+              "Customizationspecs": {
+                "type": "string"
+              },
+              "poweronaftercreation": {
+                "type": "string"
+              },
+              "cores": {
+                "type": "string"
+              },
+              "ram": {
+                "type": "string"
+              },
+              "corespersocket": {
+                "type": "string"
+              },
+              "datastore": {
+                "type": "string"
+              },
+              "networks": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "networkname": {
+                      "type": "string"
+                    },
+                    "ipassignment": {
+                      "type": "string"
+                    },
+                    "ipaddress": {
+                      "type": "string"
+                    },
+                    "subnetmask": {
+                      "type": "string"
+                    },
+                    "defaultgateway": {
+                      "type": "string"
+                    },
+                    "dnsserver": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "required": [
+                    "networkname",
+                    "ipassignment"                   
+                  ]
+                }
+              },
+              "disks": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "size": {
+                      "type": "string"
+                    },
+                    "format": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "size"
+                  ]
+                }
+              },
+              "vcentercredential": {
+                "type": "object",
+                "properties": {
+                  "username": {
+                    "type": "string"
+                  },
+                  "password": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "username",
+                  "password"
+                ]
+              },
+              "guestcredential": {
+                "type": "object",
+                "properties": {
+                  "username": {
+                    "type": "string"
+                  },
+                  "password": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "username",
+                  "password"
+                ]
+              },
+              "dscpullserver": {
+                "type": "object",
+                "properties": {
+                  "pullserverurl": {
+                    "type": "string"
+                  },
+                  "registrationkey": {
+                    "type": "string"
+                  },
+                  "configname": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "pullserverurl",
+                  "registrationkey"                  
+                ]
+              }
+            },
+            "required": [              
+              "template",      
+              "cores",
+              "ram",        
+              "networks"             
+            ]
+          }
+        },
+        "required": [
+          "type",
+          "name",          
+          "properties"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schema",
+    "contentVersion",
+    "parameters",
+    "variables",
+    "resources"
+  ]
+}

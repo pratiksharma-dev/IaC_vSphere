@@ -1,0 +1,78 @@
+{
+  "schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {   
+  },
+  "variables": {   
+  },
+  "resources": [
+    {
+      "type": "VirtualMachines",
+      "name": "TestVM",
+      "dependsOn": "",
+	  "mode":"create",
+      "properties": {
+        "description": "Test VM",
+        "vcenterserver": "",
+        "datacenter": "",
+        "cluster": "",
+		"vmhost": "",
+		"environment":"TRN",
+        "template": "Win2012R2",
+        "Customizationspecs": "",
+        "poweronaftercreation": true,
+		"rebootforEdit":false,
+		"enableCPUHotAdd":true,
+		"enableMemoryHotAdd":true,
+        "vcpu": 2,
+        "memoryinGB": 6,
+        "corespersocket": 1,
+        "datastore": "",
+        "networks": [
+          {
+            "networkname": "Presentation",
+            "ipassignment": "Static",
+            "ipaddress": "10.0.0.56",
+            "subnetmask": "255.255.255.0",
+            "defaultgateway": "10.0.0.4",
+            "dnsserver": [ "10.0.0.4", "10.0.0.5" ]
+          },
+          {
+            "networkname": "Application",
+            "ipassignment": "Static",
+            "ipaddress": "10.0.0.24",
+            "subnetmask": "255.255.255.0",
+            "defaultgateway": "10.0.0.4",
+            "dnsserver": [ "10.0.0.4", "10.0.0.5" ]
+          }
+        ],
+        "disks": [
+          {
+            "name": "Datadisk1",
+            "sizeinGB": 100,
+            "format": ""
+          },
+          {
+            "name": "Datadisk2",
+            "sizeinGB": 150,
+            "format": ""
+          }
+        ],
+        "vcentercredential": {
+          "username": "",
+          "password": ""
+        },
+        "guestcredential": {
+          "username": "",
+          "password": ""
+        },
+        "dscpullserver": {
+          "pullserverurl": "",
+          "registrationkey": "",
+          "configname": ""
+        }
+      }
+    }
+        ]
+      }
+  
